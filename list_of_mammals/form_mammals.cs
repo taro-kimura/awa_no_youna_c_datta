@@ -15,10 +15,10 @@ namespace list_of_mammals
         {
             InitializeComponent();
 
-            // 初期表示時に、先頭の項目を選択
+            // 初期表示時に、霊長目の項目を選択
             this.comb_moku.SelectedIndex = 0;
 
-            // 霊長目
+            // 初期表示時に、霊長目の情報を表示
             for (int i = 0; i < 8; ++i)
             {
                 Info info_reic = new Info(comb_moku.SelectedItem.ToString(), i);
@@ -33,20 +33,17 @@ namespace list_of_mammals
             // ListViewの初期化
             lv_name.Items.Clear();
 
-            switch(comb_moku.SelectedItem.ToString())
+            // TextBoxの初期化
+            text_taicho.Text = "";
+            text_taiju.Text = "";
+            text_bumpu.Text = "";
+
+            for (int cnt = 0; cnt < 8; cnt++)
             {
-                case "霊長目":
+                Info info_reic = new Info(comb_moku.SelectedItem.ToString(), cnt);
 
-                    // 霊長目
-                    for (int i = 0; i < 8; ++i)
-                    {
-                        Info info_reic = new Info(comb_moku.SelectedItem.ToString(), i);
-
-                        //アイテムをリスビューに追加する
-                        lv_name.Items.Add(info_reic.Name);
-                    }
-
-                    break;
+                //アイテムをリスビューに追加する
+                lv_name.Items.Add(info_reic.Name);
             }
         }
 
@@ -183,6 +180,94 @@ namespace list_of_mammals
                             this.taicho = "120cm";
                             this.taiju = "150-160kg";
                             this.bumpu = "アフリカ中央部";
+
+                            break;
+
+                    }
+
+                    break;
+
+               case "有袋目":
+
+                    switch (id)
+                    {
+                        case 0:
+
+                            this.name = "コアラ";
+                            this.taicho = "60-80cm";
+                            this.taiju = "8-12kg";
+                            this.bumpu = "オーストラリア東部";
+
+                            break;
+
+                        case 1:
+
+                            this.name = "ヒメウォンバット（オーストラリアウォンバット）";
+                            this.taicho = "70-120cm";
+                            this.taiju = "25-40kg";
+                            this.bumpu = "オーストラリア東部、タスマニア";
+
+                            break;
+
+                        case 2:
+
+                            this.name = "アカカンガルー";
+                            this.taicho = "85-160cm";
+                            this.taiju = "20-55kg";
+                            this.bumpu = "オーストラリア";
+
+                            break;
+
+                        case 3:
+
+                            this.name = "セスジキノボリカンガルー";
+                            this.taicho = "55-75cm";
+                            this.taiju = "7-9kg";
+                            this.bumpu = "ニューギニア";
+
+                            break;
+
+                    }
+
+                    break;
+
+               case "貧歯目":
+
+                    switch (id)
+                    {
+                        case 0:
+
+                            this.name = "ホフマンナマケモノ";
+                            this.taicho = "60-65cm";
+                            this.taiju = "10kg前後";
+                            this.bumpu = "中央･南アメリカ";
+
+                            break;
+
+                        case 1:
+
+                            this.name = "ミナミコアリクイ";
+                            this.taicho = "53-88cm";
+                            this.taiju = "3.5-8.5kg";
+                            this.bumpu = "南アメリカ";
+
+                            break;
+
+                        case 2:
+
+                            this.name = "オオアリクイ";
+                            this.taicho = "100-120cm";
+                            this.taiju = "20-40kg";
+                            this.bumpu = "中央･南アメリカ";
+
+                            break;
+
+                        case 3:
+
+                            this.name = "マタコミツオビアルマジロ";
+                            this.taicho = "22-27cm";
+                            this.taiju = "1-1.6kg";
+                            this.bumpu = "南アメリカ";
 
                             break;
 

@@ -58,7 +58,7 @@
             "げっ歯目"});
             this.comb_moku.Location = new System.Drawing.Point(12, 12);
             this.comb_moku.Name = "comb_moku";
-            this.comb_moku.Size = new System.Drawing.Size(222, 20);
+            this.comb_moku.Size = new System.Drawing.Size(231, 20);
             this.comb_moku.TabIndex = 0;
             this.comb_moku.SelectionChangeCommitted += new System.EventHandler(this.comb_moku_SelectionChangeCommitted);
             // 
@@ -70,7 +70,7 @@
             this.lv_name.GridLines = true;
             this.lv_name.Location = new System.Drawing.Point(12, 38);
             this.lv_name.Name = "lv_name";
-            this.lv_name.Size = new System.Drawing.Size(221, 110);
+            this.lv_name.Size = new System.Drawing.Size(231, 110);
             this.lv_name.TabIndex = 1;
             this.lv_name.UseCompatibleStateImageBehavior = false;
             this.lv_name.View = System.Windows.Forms.View.Details;
@@ -79,7 +79,7 @@
             // colheader_name
             // 
             this.colheader_name.Text = "名前";
-            this.colheader_name.Width = 220;
+            this.colheader_name.Width = 231;
             // 
             // lab_bumpu
             // 
@@ -92,16 +92,20 @@
             // 
             // text_bumpu
             // 
+            this.text_bumpu.BackColor = System.Drawing.SystemColors.Info;
             this.text_bumpu.Location = new System.Drawing.Point(12, 265);
             this.text_bumpu.Name = "text_bumpu";
-            this.text_bumpu.Size = new System.Drawing.Size(221, 19);
+            this.text_bumpu.ReadOnly = true;
+            this.text_bumpu.Size = new System.Drawing.Size(231, 19);
             this.text_bumpu.TabIndex = 7;
             // 
             // text_taicho
             // 
+            this.text_taicho.BackColor = System.Drawing.SystemColors.Info;
             this.text_taicho.Location = new System.Drawing.Point(12, 173);
             this.text_taicho.Name = "text_taicho";
-            this.text_taicho.Size = new System.Drawing.Size(221, 19);
+            this.text_taicho.ReadOnly = true;
+            this.text_taicho.Size = new System.Drawing.Size(231, 19);
             this.text_taicho.TabIndex = 9;
             // 
             // lab_taicho
@@ -115,9 +119,11 @@
             // 
             // text_taiju
             // 
+            this.text_taiju.BackColor = System.Drawing.SystemColors.Info;
             this.text_taiju.Location = new System.Drawing.Point(12, 218);
             this.text_taiju.Name = "text_taiju";
-            this.text_taiju.Size = new System.Drawing.Size(221, 19);
+            this.text_taiju.ReadOnly = true;
+            this.text_taiju.Size = new System.Drawing.Size(231, 19);
             this.text_taiju.TabIndex = 11;
             // 
             // lab_taiju
@@ -133,7 +139,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(245, 306);
+            this.ClientSize = new System.Drawing.Size(255, 306);
             this.Controls.Add(this.text_taiju);
             this.Controls.Add(this.lab_taiju);
             this.Controls.Add(this.text_taicho);
