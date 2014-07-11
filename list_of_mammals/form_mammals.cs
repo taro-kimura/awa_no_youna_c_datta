@@ -11,6 +11,9 @@ namespace list_of_mammals
 {
     public partial class form_mammals : Form
     {
+
+        static public int cnt_max = 22;
+
         public form_mammals()
         {
             InitializeComponent();
@@ -19,9 +22,9 @@ namespace list_of_mammals
             this.comb_moku.SelectedIndex = 0;
 
             // 初期表示時に、霊長目の情報を表示
-            for (int i = 0; i < 8; ++i)
+            for (int cnt = 0; cnt < cnt_max; cnt++)
             {
-                Info info_reic = new Info(comb_moku.SelectedItem.ToString(), i);
+                Info info_reic = new Info(comb_moku.SelectedItem.ToString(), cnt);
 
                 //アイテムをリスビューに追加する
                 lv_name.Items.Add(info_reic.Name);
@@ -38,7 +41,7 @@ namespace list_of_mammals
             text_taiju.Text = "";
             text_bumpu.Text = "";
 
-            for (int cnt = 0; cnt < 8; cnt++)
+            for (int cnt = 0; cnt < cnt_max; cnt++)
             {
                 Info info_reic = new Info(comb_moku.SelectedItem.ToString(), cnt);
 
@@ -271,6 +274,243 @@ namespace list_of_mammals
 
                             break;
 
+                    }
+
+                    break;
+
+               case "翼手目":
+
+                    switch (id)
+                    {
+                        case 0:
+
+                            this.name = "クビワオオコウモリ";
+                            this.taicho = "19-25cm";
+                            this.taiju = "不明";
+                            this.bumpu = "分布　日本（南西諸島）、台湾";
+
+                            break;
+                    }
+
+                    break;
+
+               case "クジラ目":
+
+                    switch (id)
+                    {
+                        case 0:
+
+                            this.name = "バンドウイルカ（ハンドウイルカ）";
+                            this.taicho = "190-400cm";
+                            this.taiju = "150-650kg";
+                            this.bumpu = "世界中の温帯～熱帯海域";
+
+                            break;
+                    }
+
+                    break;
+
+               case "食肉目":
+
+                    switch (id)
+                    {
+                        case 0:
+
+                            this.name = "オオカミ（タイリクオオカミ）";
+                            this.taicho = "100-160cm";
+                            this.taiju = "20-80kg";
+                            this.bumpu = "ユーラシア、北アメリカ、中近東など、北半球に広く分布";
+
+                            break;
+
+                        case 1:
+
+                            this.name = "ヒグマ（エゾヒグマ）";
+                            this.taicho = "200-230cm";
+                            this.taiju = "150-250kg";
+                            this.bumpu = "北海道";
+
+                            break;
+
+                        case 2:
+
+                            this.name = "マレーグマ";
+                            this.taicho = "100-140cm";
+                            this.taiju = "27-65kg";
+                            this.bumpu = "東南アジア";
+
+                            break;
+
+                        case 3:
+
+                            this.name = "メガネグマ";
+                            this.taicho = "130-210cm";
+                            this.taiju = "27-65kg";
+                            this.bumpu = "南アメリカ";
+
+                            break;
+
+                        case 4:
+
+                            this.name = "ホッキョクグマ（シロクマ）";
+                            this.taicho = "180-250cm";
+                            this.taiju = "150-800kg";
+                            this.bumpu = "北極圏とその周辺";
+
+                            break;
+
+                        case 5:
+
+                            this.name = "パンダ（ジャイアントパンダ）";
+                            this.taicho = "120-150cm";
+                            this.taiju = "75-160kg";
+                            this.bumpu = "中国";
+
+                            break;
+
+                        case 6:
+
+                            this.name = "レッサーパンダ";
+                            this.taicho = "50-65cm";
+                            this.taiju = "4-6kg";
+                            this.bumpu = "中央アジア";
+
+                            break;
+
+                        case 7:
+
+                            this.name = "コツメカワウソ";
+                            this.taicho = "45-60cm";
+                            this.taiju = "1-5kg";
+                            this.bumpu = "南アジア、東南アジア";
+
+                            break;
+
+                        case 8:
+
+                            this.name = "ラッコ";
+                            this.taicho = "75-120cm";
+                            this.taiju = "13-45kg";
+                            this.bumpu = "北太平洋";
+
+                            break;
+
+                        case 9:
+
+                            this.name = "シママングース";
+                            this.taicho = "30-45cm";
+                            this.taiju = "不明";
+                            this.bumpu = "アフリカ";
+
+                            break;
+
+                        case 10:
+
+                            this.name = "ミーアキャット";
+                            this.taicho = "25-35cm";
+                            this.taiju = "不明";
+                            this.bumpu = "アフリカ南西部";
+
+                            break;
+
+                        case 11:
+
+                            this.name = "ブチハイエナ";
+                            this.taicho = "130cm前後";
+                            this.taiju = "不明";
+                            this.bumpu = "アフリカ（サハラ砂漠以南）";
+
+                            break;
+
+                        case 12:
+
+                            this.name = "サーバル";
+                            this.taicho = "60-100cm";
+                            this.taiju = "9-18kg";
+                            this.bumpu = "アフリカ（サハラ砂漠以南）";
+
+                            break;
+
+                        case 13:
+
+                            this.name = "ピューマ（クーガー、アメリカライオン）";
+                            this.taicho = "110-200cm";
+                            this.taiju = "70-105kg";
+                            this.bumpu = "北アメリカ、中央アメリカ、南アメリカ";
+
+                            break;
+
+                        case 14:
+
+                            this.name = "ウンピョウ";
+                            this.taicho = "60-110cm";
+                            this.taiju = "16-23kg";
+                            this.bumpu = "東南アジア";
+
+                            break;
+
+                        case 15:
+
+                            this.name = "ライオン";
+                            this.taicho = "140-250cm";
+                            this.taiju = "120-250kg";
+                            this.bumpu = "アフリカ、インド北西部";
+
+                            break;
+
+                        case 16:
+
+                            this.name = "トラ";
+                            this.taicho = "140-280cm";
+                            this.taiju = "120-250kg";
+                            this.bumpu = "アジア中部～東部";
+
+                            break;
+
+                        case 17:
+
+                            this.name = "ジャガー";
+                            this.taicho = "110-185cm";
+                            this.taiju = "40-160kg";
+                            this.bumpu = "北アメリカ南部、中央アメリカ、南アメリカ";
+
+                            break;
+
+                        case 18:
+
+                            this.name = "ヒョウ";
+                            this.taicho = "90-190cm";
+                            this.taiju = "37-90kg";
+                            this.bumpu = "アフリカ、アジア";
+
+                            break;
+
+                        case 19:
+
+                            this.name = "チーター";
+                            this.taicho = "110-150cm";
+                            this.taiju = "20-70kg";
+                            this.bumpu = "アフリカ、アジア西部";
+
+                            break;
+
+                        case 20:
+
+                            this.name = "カリフォルニアアシカ";
+                            this.taicho = "220cm（オス）　180cm（メス）";
+                            this.taiju = "300kg（オス）";
+                            this.bumpu = "太平洋東部沿岸";
+
+                            break;
+
+                        case 21:
+
+                            this.name = "ゴマフアザラシ";
+                            this.taicho = "～180cm";
+                            this.taiju = "～150kg";
+                            this.bumpu = "ベーリング海～オホーツク海";
+
+                            break;
                     }
 
                     break;
