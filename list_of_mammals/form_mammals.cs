@@ -511,9 +511,243 @@ namespace list_of_mammals
                             this.bumpu = "ベーリング海～オホーツク海";
 
                             break;
+
                     }
 
                     break;
+
+               case "長鼻目":
+
+                    switch (id)
+                    {
+                        case 0:
+
+                            this.name = "ゾウ（アジアゾウ）";
+                            this.taicho = "550-640cm";
+                            this.taiju = "2700-5400kg";
+                            this.bumpu = "インド～東南アジア、中国南部";
+
+                            break;
+                    }
+
+                    break;
+
+               case "海牛目":
+
+                    switch (id)
+                    {
+                        case 0:
+
+                            this.name = "ジュゴン";
+                            this.taicho = "400cm";
+                            this.taiju = "230-900kg";
+                            this.bumpu = "インド洋～太平洋南西部沿岸";
+
+                            break;
+                    }
+
+                    break;
+
+               case "奇蹄目":
+
+                    switch (id)
+                    {
+                        case 0:
+
+                            this.name = "モウコノウマ";
+                            this.taicho = "220-260cm";
+                            this.taiju = "200-300kg";
+                            this.bumpu = "アジア中央部（野生のものは絶滅）";
+
+                            break;
+
+                        case 1:
+
+                            this.name = "シマウマ（サバンナシマウマ）";
+                            this.taicho = "240cm";
+                            this.taiju = "300kg";
+                            this.bumpu = "アフリカ";
+
+                            break;
+
+                        case 2:
+
+                            this.name = "マレーバク";
+                            this.taicho = "185-240cm";
+                            this.taiju = "250-365kg";
+                            this.bumpu = "東南アジア";
+
+                            break;
+
+                        case 3:
+
+                            this.name = "クロサイ";
+                            this.taicho = "295-375cm";
+                            this.taiju = "800-1400kg";
+                            this.bumpu = "アフリカ";
+
+                            break;
+                    }
+
+                    break;
+
+               case "偶蹄目":
+
+                    switch (id)
+                    {
+                        case 0:
+
+                            this.name = "カバ";
+                            this.taicho = "280-420cm";
+                            this.taiju = "1350-3200kg";
+                            this.bumpu = "アフリカ";
+
+                            break;
+
+                        case 1:
+
+                            this.name = "コビトカバ";
+                            this.taicho = "170-195cm";
+                            this.taiju = "200-275kg";
+                            this.bumpu = "西アフリカ";
+
+                            break;
+
+                        case 2:
+
+                            this.name = "フタコブラクダ";
+                            this.taicho = "300cm";
+                            this.taiju = "450-1000kg";
+                            this.bumpu = "中央アジア";
+
+                            break;
+
+                        case 3:
+
+                            this.name = "ジャワマメジカ";
+                            this.taicho = "30-48cm";
+                            this.taiju = "1.7-2.6kg";
+                            this.bumpu = "東南アジア";
+
+                            break;
+
+                        case 4:
+
+                            this.name = "キリン";
+                            this.taicho = "250-370cm　頭までの高さ　500-580cm";
+                            this.taiju = "550-1900kg";
+                            this.bumpu = "アフリカ";
+
+                            break;
+
+                        case 5:
+
+                            this.name = "オカピ";
+                            this.taicho = "200-210cm";
+                            this.taiju = "210-300kg";
+                            this.bumpu = "アフリカ";
+
+                            break;
+
+                        case 6:
+
+                            this.name = "バーバリーシープ";
+                            this.taicho = "130-170cm";
+                            this.taiju = "40-145kg";
+                            this.bumpu = "アフリカ北部";
+
+                            break;
+
+                        case 7:
+
+                            this.name = "ムフロン";
+                            this.taicho = "100-120cm";
+                            this.taiju = "30-50kg";
+                            this.bumpu = "地中海のコルシカ島、サルジニア島、地中海沿岸など";
+
+                            break;
+                    }
+
+                    break;
+
+               case "管歯目":
+
+                    switch (id)
+                    {
+                        case 0:
+
+                            this.name = "ツチブタ";
+                            this.taicho = "160cm";
+                            this.taiju = "不明";
+                            this.bumpu = "アフリカ中部・南部";
+
+                            break;
+                    }
+
+                    break;
+
+               case "げっ歯目":
+
+                    switch (id)
+                    {
+                        case 0:
+
+                            this.name = "シマリス（エゾシマリス）";
+                            this.taicho = "12-17cm";
+                            this.taiju = "50-120g";
+                            this.bumpu = "北海道";
+
+                            break;
+
+                        case 1:
+
+                            this.name = "プレーリードッグ（オグロプレーリードッグ）";
+                            this.taicho = "28-35cm";
+                            this.taiju = "900-1400g";
+                            this.bumpu = "北アメリカ";
+
+                            break;
+
+                        case 2:
+
+                            this.name = "ハダカデバネズミ";
+                            this.taicho = "8-9cm";
+                            this.taiju = "不明";
+                            this.bumpu = "アフリカ東部";
+
+                            break;
+
+                        case 3:
+
+                            this.name = "カナダヤマアラシ";
+                            this.taicho = "65-80cm";
+                            this.taiju = "不明";
+                            this.bumpu = "北アメリカ";
+
+                            break;
+
+                        case 4:
+
+                            this.name = "マーラ";
+                            this.taicho = "60-75cm";
+                            this.taiju = "9-16kg";
+                            this.bumpu = "南アメリカ";
+
+                            break;
+
+                        case 5:
+
+                            this.name = "カピバラ";
+                            this.taicho = "105-135cm";
+                            this.taiju = "35-65kg";
+                            this.bumpu = "南アメリカ";
+
+                            break;
+                        
+                    }
+
+                    break;
+
             }
         }
 
