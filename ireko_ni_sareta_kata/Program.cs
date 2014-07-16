@@ -8,8 +8,11 @@ namespace ireko_ni_sareta_kata
         // SampleクラスはProgramクラスの中だけで使用できる
         class Sample
         {
+            // 自動プロパティ
+            // 値を保持するためのフィールド変数の宣言、getアクセサー、setアクセサーの記述を省略できる
             public string Name { get; set; }
             public int Price { get; set; }
+
             public void Show()
             {
                 Console.Write(Name);
